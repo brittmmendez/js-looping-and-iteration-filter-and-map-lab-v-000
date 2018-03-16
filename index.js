@@ -24,4 +24,12 @@ function exactMatch (drivers, option){
   });
 }
 
-
+function exactMatchToList (drivers, option){
+  const key=Object.keys(option);
+  const attribute = (option[key]);
+ 
+  const array = drivers.filter(function (driver){return driver.name===attribute || driver.revenue===attribute;});
+  
+    return array.map(function(driver) {return driver.name;});
+  
+}
