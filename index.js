@@ -30,6 +30,6 @@ function exactMatchToList (drivers, option){
  
   const array = drivers.filter(function (driver){return driver.name===attribute || driver.revenue===attribute;});
   
-    return array.map(function(driver) {return driver.name;});
+  return array.map(function(driver) {return driver.name;});
   
 }
