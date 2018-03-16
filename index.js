@@ -5,10 +5,7 @@ function driversWithRevenueOver(drivers, revenue){
 }
 
 function driverNamesWithRevenueOver(drivers, revenue){
-  array=drivers.filter(function (driver){
-    return driver.revenue>revenue;
-  });
-  
+  array=drivers.filter(function (driver){return driver.revenue>revenue;});
   return array.map(function(driver) {return driver.name;});
 }
 
@@ -27,14 +24,4 @@ function exactMatch (drivers, option){
   });
 }
 
-function exactMatch (drivers, option){
-  const key=Object.keys(option);
-  const attribute = (option[key]);
- 
-  const array = drivers.filter(function (driver){
-    return driver.name===attribute || driver.revenue===attribute;
-  });
-  
-  return array.map(function(driver) {return driver.name;});
-  
-}
+
