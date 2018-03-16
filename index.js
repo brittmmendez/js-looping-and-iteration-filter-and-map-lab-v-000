@@ -1,5 +1,5 @@
 function driversWithRevenueOver(drivers, revenue){
-//returns an array of all matching drivers 
+//returns an array of all matching drivers
 //returns an empty array if there is no match
   return drivers.filter(function (driver){
     return driver.revenue>revenue;
@@ -14,6 +14,8 @@ function driverNamesWithRevenueOver(drivers, revenue){
 }
 
 function exactMatch (drivers, option){
+  //returns an array of all matching drivers
+  //returns an empty array if there is no match
   const key=Object.keys(option);
   const attribute = (option[key]);
 
@@ -23,6 +25,8 @@ function exactMatch (drivers, option){
 }
 
 function exactMatchToList (drivers, option){
+//returns an array of names for all matching drivers ‣
+//returns an empty array if there is no match
   const key=Object.keys(option);
   const attribute = (option[key]);
 
